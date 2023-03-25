@@ -1,0 +1,142 @@
+@import "./mini-reset.css";
+
+$main-color: rgb(0, 72, 26);
+
+// Link(anchor)의 디폴트 스타일 제거
+* {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.Header {
+  width: 100vw;
+  height: 3rem;
+  background-color: $main-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+  span {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  div {
+    display: flex;
+    gap: 2rem;
+
+    span {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+}
+
+.Navbar {
+  width: 100vw;
+  height: 1.5rem;
+  background-color: lightgray;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.Footer {
+  width: 100vw;
+  height: 3rem;
+  background-color: antiquewhite;
+}
+
+.Content {
+  width: 100vw;
+  height: 100%;
+  min-height: calc(100vh - 7.5rem);
+}
+
+.HomeContent {
+  .slidebar {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-color: $main-color;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+
+    img {
+      position: absolute;
+      width: 20rem;
+      bottom: 0px;
+      right: 10%;
+    }
+
+    .test {
+      position: absolute;
+      width: fit-content;
+      height: 6rem;
+      font-size: 1rem;
+      color: white;
+      bottom: 0px;
+      right: 5%;
+
+      p {
+        height: 2rem;
+      }
+    }
+  }
+}
+
+.FeaturedMenu {
+  width: 100%;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.MenuCard {
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid lightgray;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 80%;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  div {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
